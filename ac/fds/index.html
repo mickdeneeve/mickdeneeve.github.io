@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Hypernymy recognition in a neural distributional model using information gain and
+  update semantics</title>
+</head>
+<body>
+<h1><center>Hypernymy recognition in a neural distributional model using information gain and update semantics<center></h1>
+<h3><center>Mick de Neeve<br><br>Department of Philosophy<br>University of Amsterdam<br><br>December 23, 2022</center></h3>
+<b>Abstract </b> While similarity relations can be easily identified in distributional models, hypernymy is harder because the relationship is asymmetric. Information gain or entropy is one measure that has been proposed, but it is not straightforward how to use this in neural models because word embedding information is implicit. This paper proposes a solution for measuring information gain in a Word2Vec model, and has a twofold aim: to demonstrate how the neural network layers can be exploited to approximate prior and conditional probabilities so that information gain can be measured, and to show that update semantics is a viable candidate for the underlying notion of meaning in such models. To this end, an epistemic dynamic semantics is implemented using the neural network, with updates between hypernymic information states. The result confirms information gain experiments to a signicant degree, and outperforms it on a small subset of transitivity triples.
+<ul>
+  <li><a href="deneeve.updsemdist.pdf" target="_blank">Full text (pdf)</a></li>
+  <br>
+  <li><a href="src/">Source code</a></li>
+  <li><a href="lex/">Datasets</a></li>
+  <li><a href="exp/">Results</a></li>
+  <br>
+  <li><a href="https://github.com/RaRe-Technologies/gensim" target="_blank">Model (Gensim/Word2Vec)</a></li>
+  <li><a href="https://www.litika.com/torrents/enwiki-20210920-pages-articles.xml.bz2.torrent" target="_blank">Corpus (Wikipedia torrent)</a></li>
+</ul> 
+</body>
+</html>
