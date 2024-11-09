@@ -46,14 +46,3 @@ stepwise([N1,N2|Notes]) :-
 stepwise(N1, N2) :-
    S is abs(N1-N2),
    S =< 1.
-
-/* leapwise(+Notes)
-      Succeeds if Notes has a successor transition greater than 1.
-      NB: UNUSED
-*/
-leapwise([N1, N2|_]) :-
-   not(stepwise(N1,N2)), !.
-leapwise([N1,N2|Notes]) :-
-   not(stepwise(N1,N2))
-   ;
-   leapwise([N2|Notes]).

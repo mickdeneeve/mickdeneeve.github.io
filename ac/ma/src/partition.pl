@@ -55,28 +55,3 @@ noteparts([Part|Parts], Notes, [NotePart|NoteParts]) :-
    length(Part, L),
    length(NotePart, L),
    noteparts(Parts, NoteRest, NoteParts), !.
-
-
-%parts([], []).
-%parts([Head|Tail], [[Head|NewTail]|Parts]) :-
-%   append(NewTail, New, Tail),
-%   parts(New, Parts).
-
-%parts([], []).
-%parts([Head|Tail], [[Head|Rest1]|Part]) :-
-%   append(Tail, Rest1, Rest2),
-%   parts(Rest2, Part).
-
-%partition([], []).
-%partition([Head|Tail], [[Head|NewTail]|Parts]) :-
-%   append(New, NewTail, Tail),
-%   length(NewTail, S),
-%   last(NewTail, Z),
-%   S > 0,
-%   member(Z, [0, 4, 2]),
-%   partition(New, Parts).
-
-%partition(List, Partitions) :-
-%   findall(Part, partlist(List,Part), Parts),
-%   reverse(Parts, [_|Partitions]).
-

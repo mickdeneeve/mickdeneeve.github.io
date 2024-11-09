@@ -49,8 +49,3 @@ list([]).
 list([Head|Tail]) :-
    writeln(Head),
    list(Tail).
-
-
-
-
-
