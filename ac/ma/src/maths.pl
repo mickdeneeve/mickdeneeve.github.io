@@ -3,7 +3,7 @@
    REQUIRES:  SWI Prolog (https://www.swi-prolog.org)
    AUTHOR:    Mick de Neeve <mick@live.nl>
    INSTITUTE: University of Amsterdam
-   DATE:      December 1, 2024
+   DATE:      December 3, 2024
 */
 
 /* round(+Float, +Decimals, -Rounded)
